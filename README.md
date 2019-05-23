@@ -1,5 +1,9 @@
 # steam-bulk-activator-js
-Script to activate many Steam keys. There seems to be a limit of around 50 keys in an hour.
+Use this script in the browser to activate many Steam keys in one shot. Simply paste the JavaScript code into the browser console and go. No installation required!
+
+The console will print the newly activated keys as well as any errors.
+
+There seems to be a limit of around 50 keys per hour.
 
 # Usage
 1. Add your keys into the "keys" array in steam-activator.js
