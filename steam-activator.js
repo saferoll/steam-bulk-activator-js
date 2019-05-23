@@ -11,7 +11,7 @@ function activate(key) {
     }
     setTimeout(function () {
         document.getElementById('register_btn').click()
-    }, 200)
+    }, 100)
 }
 
 function checkPage(s) {
@@ -25,13 +25,11 @@ function checkPage(s) {
         console.log(receiptForm.firstElementChild.textContent.trim())
         console.log(document.getElementById('registerkey_productlist').textContent)
         DisplayPage('code') // show registerkey_form
-        if (s.index === s.keys.length) return
     } else if (!isHidden(registerForm)) {
         if (s.wait && !isHidden(errorDisplay)) {
             s.wait = false
             console.log(errorDisplay.textContent)
             errorDisplay.style.display = "none" // hide before activating next key (or else we won't wait properly for receipt_form to appear)
-            if (s.index === s.keys.length) return
         }
         if (!s.wait) {
             if (s.index === s.keys.length) return
@@ -48,8 +46,14 @@ checkPage({
     wait: false,
     keys: [
         'XXXXX-XXXXX-XXXXX',
-        'KEY 2',
-        'KEY 3',
-        '...'
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        ''
     ]
 })
